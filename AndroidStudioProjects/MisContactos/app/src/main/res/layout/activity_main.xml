@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margen"
+    android:paddingRight="@dimen/margen"
+    android:paddingTop="@dimen/margen"
+    tools:context="com.gustavoperez.miscontactos.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorFormulario">
+
+    <TextView
+        android:id="@+id/tvTituloForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titform"
+        android:textStyle="bold"
+        android:textSize="@dimen/titformsize"
+        />
+    <EditText
+        android:id="@+id/etNombreAlta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/faltanombre"
+        android:inputType="textPersonName"
+        android:layout_below="@id/tvTituloForm"
+        />
+    <EditText
+        android:id="@+id/etTlfAlta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/faltatlf"
+        android:inputType="phone"
+        android:layout_below="@id/etNombreAlta"
+        />
+    <EditText
+        android:id="@+id/etMailAlta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/faltamail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/etTlfAlta"
+        />
+    <EditText
+        android:id="@+id/etDescripAlta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/faltadescrip"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:layout_below="@id/etMailAlta"
+        />
+    <EditText
+        android:id="@+id/etFNacAlta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/faltafnac"
+        android:inputType="date"
+        android:layout_below="@id/etDescripAlta"
+        android:clickable="true"
+        android:focusable="false"
+        android:maxLines="1"
+        android:onClick="mostrarSpinner"
+
+        />
+    <Button
+        android:id="@+id/btAñadir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btañadir"
+    />
+</LinearLayout>
+</RelativeLayout>

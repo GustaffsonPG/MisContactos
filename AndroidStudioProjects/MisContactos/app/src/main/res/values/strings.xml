@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MisContactos</string>
+    <string name="titform">ALTA CONTACTO</string>
+    <string name="faltanombre">Nombre</string>
+    <string name="faltatlf">Tlf</string>
+    <string name="faltamail">Mail</string>
+    <string name="faltadescrip">Descripción</string>
+    <string name="faltafnac">Fecha Nacimiento</string>
+    <string name="btañadir">Alta</string>
+    <string name="mensajeOk">Ok</string>
+</resources>
